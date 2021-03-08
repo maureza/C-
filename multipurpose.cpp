@@ -4,10 +4,18 @@
 #include<stdlib.h>
 using namespace std;
 
-int sum()
+int sum(int a)
 {
-
-
+    system("CLS");
+    //cout << a;
+    int many, numbers, sum;
+    for(many = 1; many <= a; many++)
+    {
+        cout << "Ingresa el número " << many << endl;
+        cin >> numbers;
+        sum = sum + numbers;
+    }
+    cout << "La suma total es " << sum << endl;
 }
 
 
@@ -33,6 +41,7 @@ main()
     switch(opt)
     {
     case 1:
+        system("CLS");
         cout << "Qué operación deseas realizar?" << endl;
         cout << "1.-Suma" << endl;
         cout << "2.-Resta" << endl;
@@ -40,8 +49,17 @@ main()
         cout << "4.-Primo o no" << endl;
         cout << "5.-Entero o no" << endl;
         cout << "Presione cualquier tecla para el siguiente apartado..." << endl;
-
         cin >> next;
+        switch(next)
+        {
+        case 1:
+            system("CLS");
+            int veces;
+            cout << "Cuántos números deseas sumar? " << endl;
+            cin >> veces;
+            sum(veces);
+            break;
+        }
         break;
     case 2:
         break;
