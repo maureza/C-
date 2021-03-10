@@ -7,15 +7,14 @@ using namespace std;
 int sum(int a)
 {
     system("CLS");
-    //cout << a;
-    int many, numbers, sum;
-    for(many = 1; many <= a; many++)
+    int counter, numbers, oper = 0;
+    for(counter = 1; counter <= a; counter ++)
     {
-        cout << "Ingresa el número " << many << endl;
+        cout << "Ingresa el numero " << a << endl;
         cin >> numbers;
-        sum = sum + numbers;
+        oper = oper + numbers;
     }
-    cout << "La suma total es " << sum << endl;
+    cout << "El resultado " << oper;
 }
 
 
