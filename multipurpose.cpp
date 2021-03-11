@@ -10,20 +10,40 @@ int sum(int a)
     int counter, numbers, oper = 0;
     for(counter = 1; counter <= a; counter ++)
     {
+        system("CLS");
         cout << "Ingresa el numero " << a << endl;
         cin >> numbers;
         oper = oper + numbers;
     }
-    cout << "El resultado " << oper;
+    cout << "El resultado es " << oper;
 }
 
+int res(int a)
+{
+    int counter, substractn, sub, op = 0;
+    cout << "Cuántas veces quieres restar? ";
+    cin >> substractn;
+    for(counter = 1; counter <= substractn; counter++)
+    {
+        cout << "Ingresa el " << a << "número";
+        cin >> sub;
+        op = a - sub;
+        a = op;
+    }
+    cout << "La resta es: " << op;
+}
 
+int div(int a)
+{
+
+}
 
 main()
 {
     setlocale(LC_ALL, "");
 
     int opt, next;
+    //while(opt =! )
     cout << "\t\t***Bienvenido al programa multiusos***\n" << endl;
     cout << "1.-Operaciones numericas" << endl;
     cout << "2.-Operaciones con arreglos" << endl;
@@ -32,10 +52,6 @@ main()
     cout << "Escoge tu opción" << endl;
     cin >> opt;
 
-    if(opt != 0)
-    {
-        cout << "\n\nIngresa sólo números" << endl;
-    }
 
     switch(opt)
     {
@@ -53,13 +69,20 @@ main()
         {
         case 1:
             system("CLS");
-            int veces;
+            int times;
             cout << "Cuántos números deseas sumar? " << endl;
-            cin >> veces;
-            sum(veces);
+            cin >> times;
+            sum(times);
+            //cout << "El resultado es " << sum(veces);
+            break;
+        case 2:
+            system("CLS");
+        int num;
+        cout << "Cantidad que deseas restar: ";
+        cin >> num;
+        res(num);
             break;
         }
-        break;
     case 2:
         break;
     case 3:
