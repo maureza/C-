@@ -6,11 +6,11 @@ using namespace std;
 
 int sum(int a)
 {
-    system("CLS");
+    //systemc("CLS");
     int counter, numbers, oper = 0;
     for(counter = 1; counter <= a; counter ++)
     {
-        system("CLS");
+        //systemc("CLS");
         cout << "Ingresa el numero " << a << endl;
         cin >> numbers;
         oper = oper + numbers;
@@ -58,7 +58,7 @@ int main()
     switch(opt)
     {
     case 1:
-        system("CLS");
+        //systemc("CLS");
         cout << "Qué operación deseas realizar?" << endl;
         cout << "1.-Suma" << endl;
         cout << "2.-Resta" << endl;
@@ -70,7 +70,7 @@ int main()
         switch(next)
         {
         case 1:
-            system("CLS");
+            //systemc("CLS");
             int times;
             cout << "Cuántos números deseas sumar? " << endl;
             cin >> times;
@@ -78,7 +78,7 @@ int main()
             //cout << "El resultado es " << sum(veces);
             break;
         case 2:
-            system("CLS");
+            //systemc("CLS");
         int num;
         cout << "Cantidad que deseas restar: ";
         cin >> num;
