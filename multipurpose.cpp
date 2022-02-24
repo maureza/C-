@@ -16,6 +16,7 @@ int sum(int a)
         oper = oper + numbers;
     }
     cout << "El resultado es " << oper;
+    return oper;
 }
 
 int res(int a)
@@ -31,12 +32,13 @@ int res(int a)
         a = op;
     }
     cout << "La resta es: " << op;
+    return op;
 }
 
-int div(int a)
+/*int div(int a)
 {
 
-}
+}*/
 
 main()
 {
