@@ -51,7 +51,7 @@ int main()
     cout << "2.-Operaciones con arreglos" << endl;
     cout << "3.-Ejercicios variados" << endl;
     cout << "4.-Funcionalidades avanzadas" << endl;
-    cout << "Escoge tu opción" << endl;
+    cout << "Escoge tu opcion" << endl;
     cin >> opt;
 
 
