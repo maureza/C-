@@ -11,11 +11,11 @@ int sum(int a)
     for(counter = 1; counter <= a; counter ++)
     {
         //systemc("CLS");
-        cout << "Ingresa el numero " << a << endl;
+        cout << "Ingresa el numero " << counter << endl;
         cin >> numbers;
         oper = oper + numbers;
     }
-    cout << "El resultado es " << oper;
+    cout << "El resultado es\n" << oper << endl;
     return oper;
 }
 
