@@ -1,2 +1,21 @@
+mreyes@mreyes-thinkpad2:~$ jobs
+mreyes@mreyes-thinkpad2:~$ ls
+code  container  emacs  fbnames  xlaunch.sh
+mreyes@mreyes-thinkpad2:~$ cd code/
+mreyes@mreyes-thinkpad2:~/code$ ls
+file  multipurpose.cpp
+mreyes@mreyes-thinkpad2:~/code$ vi .gitignore
+mreyes@mreyes-thinkpad2:~/code$ rm .
+./              ../             .git/           .gitignore      .gitignore.swp  
+mreyes@mreyes-thinkpad2:~/code$ rm .gitignore.swp 
+mreyes@mreyes-thinkpad2:~/code$ vi .gitignore 
 #Ignoring the file executions
 file
+multipurpose.exe
+multipurpose.o
+~                                                                                                                                                                       
+~                                                                                                                                                                       
+~                                                                                                                                                                       
+~                                                                                                                                                                       
+~                                                                                                                                                                       
+-- INSERT --                                                                                                                                          4,15          All

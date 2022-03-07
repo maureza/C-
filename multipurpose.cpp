@@ -17,6 +17,7 @@ int sum(int a)
     }
     cout << "El resultado es\n" << oper << endl;
     return oper;
+    
 }
 
 int res(int a)
@@ -42,10 +43,9 @@ int res(int a)
 
 int main()
 {
-    setlocale(LC_ALL, "");
+	do{
 
     int opt, next;
-    //while(opt =! )
     cout << "\t\t***Bienvenido al programa multiusos***\n" << endl;
     cout << "1.-Operaciones numericas" << endl;
     cout << "2.-Operaciones con arreglos" << endl;
@@ -75,7 +75,6 @@ int main()
             cout << "Cuántos números deseas sumar? " << endl;
             cin >> times;
             sum(times);
-            //cout << "El resultado es " << sum(veces);
             break;
         case 2:
             //systemc("CLS");
@@ -92,4 +91,5 @@ int main()
     }
 
     return 5;
+	}while(true);
 }
